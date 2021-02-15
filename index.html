@@ -2,175 +2,198 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Material Design for Bootstrap</title>
-    <!-- MDB icon -->
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
-    <!-- Google Fonts Roboto -->
+    <title>About me</title>
+    <!--MDB CSS-->
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.css"
     />
-    <!-- MDB CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.css" />
-    <link rel="stylesheet" href="css/styles.css"
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+    />
     <!-- Custom styles -->
-    <style>
-    </style>
+    <link rel="stylesheet" href="css/styles.css" />
+    <style></style>
   </head>
 
   <body>
+    <!--Main Navigation-->
+    <header>
+      <!-- Start of Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Rookie Nguyen</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-mdb-toggle="collapse"
+            data-mdb-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="more.html">About me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End of Navbar -->
 
-<!--Main Navigation-->
-<header>
-
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">Rookie Nguyen</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-mdb-toggle="collapse"
-      data-mdb-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <i class="fas fa-bars"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="more.html">About me</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-mdb-ride="carousel">
-  <ol class="carousel-indicators">
-    <li
-      data-mdb-target="#carouselExampleCaptions"
-      data-mdb-slide-to="0"
-      class="active"
-    ></li>
-    <li data-mdb-target="#carouselExampleCaptions" data-mdb-slide-to="1"></li>
-    <li data-mdb-target="#carouselExampleCaptions" data-mdb-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active ">
-      <img
-        src="./img/1.jpg"
-        class="d-block w-100"
-        alt="..."
-      />
-      <div class="carousel-caption d-md-block text-lg-start">
-        <h1>Rookie Nguyen</h1>
-        <h5>Changing myself for a better cause, one small step at a time.</h5>
-        <a role="button" href="more.html" class="btn btn-lg btn-primary btn-rounded">Learn more</a>
+      <!-- Start of slideshow -->
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide carousel-fade"
+        data-mdb-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-mdb-target="#carouselExampleCaptions"
+            data-mdb-slide-to="0"
+            class="active"
+          ></li>
+          <li
+            data-mdb-target="#carouselExampleCaptions"
+            data-mdb-slide-to="1"
+          ></li>
+          <li
+            data-mdb-target="#carouselExampleCaptions"
+            data-mdb-slide-to="2"
+          ></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-md-block text-lg-start">
+              <h1>Rookie Nguyen</h1>
+              <h5>
+                Changing myself for a better cause, one small step at a time.
+              </h5>
+              <a
+                role="button"
+                href="more.html"
+                class="btn btn-lg btn-primary btn-rounded"
+                >Learn more</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-md-block text-lg-start">
+              <h1>Rookie Nguyen</h1>
+              <h5>
+                Changing myself for a better cause, one small step at a time.
+              </h5>
+              <a
+                role="button"
+                href="more.html"
+                class="btn btn-lg btn-primary btn-rounded"
+                >Learn more</a
+              >
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/3.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-md-block text-lg-start">
+              <h1>Rookie Nguyen</h1>
+              <h5>
+                Changing myself for a better cause, one small step at a time.
+              </h5>
+              <a
+                role="button"
+                href="more.html"
+                class="btn btn-lg btn-primary btn-rounded"
+                >Learn more</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="carousel-item">
-      <img
-        src="./img/2.jpg"
-        class="d-block w-100"
-        alt="..."
-      />
-      <div class="carousel-caption d-md-block text-lg-start">
-        <h1>Rookie Nguyen</h1>
-        <h5>Changing myself for a better cause, one small step at a time.</h5>
-        <a role="button" href="more.html" class="btn btn-lg btn-primary btn-rounded">Learn more</a>
+      <!-- End of slideshow -->
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <main>
+      <div class="container">
+        <!-- This is not used -->
       </div>
-    </div>
-    <div class="carousel-item">
-      <img
-        src="./img/3.jpg"
-        class="d-block w-100"
-        alt="..."
-      />
-      <div class="carousel-caption d-md-block text-lg-start">
-        <h1>Rookie Nguyen</h1>
-        <h5>Changing myself for a better cause, one small step at a time.</h5>
-        <a role="button" href="more.html" class="btn btn-lg btn-primary btn-rounded">Learn more</a>
+    </main>
+    <!--Main layout-->
+
+    <!--Footer-->
+    <footer class="bg-dark text-center text-lg-start">
+      <div class="container p-4">
+        <div class="row">
+          <div class="col-lg-8 col-md-12 mb-4 mb-md-0">
+            <p style="color: white">
+              Created as a homework for the
+              <a href="https://www.facebook.com/hlktechclub">HLK Tech Club</a>.
+            </p>
+          </div>
+          <!-- Social buttons -->
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase" style="color: white">Other stuffs</h5>
+            <a
+              class="btn btn-primary btn-lg btn-floating"
+              style="background-color: #3b5998"
+              href="https://facebook.com/RealRookie001"
+              role="button"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a
+              class="btn btn-primary btn-lg btn-floating"
+              style="background-color: #ac2bac"
+              href="https:/instagram.com/realrookie001"
+              role="button"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              class="btn btn-primary btn-lg btn-floating"
+              style="background-color: #ff4500"
+              href="https://reddit.com/u/Rookie_001"
+              role="button"
+            >
+              <i class="fab fa-reddit"></i>
+            </a>
+            <a
+              class="btn btn-primary btn-lg btn-floating"
+              style="background-color: #211f1f"
+              href="https://github.com/Rookie001MC/Personal-Porfolio"
+              role="button"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-
-</div>
-
-</header>
-<!--Main Navigation-->
-
-<!--Main layout-->
-<main>
-  <div class="container">
-
-  </div>
-</main>
-<!--Main layout-->
-
-<!--Footer-->
-<footer class="bg-dark text-center text-lg-start">
-  <div class="container p-4">
-    <div class="row">
-      <div class="col-lg-8 col-md-12 mb-4 mb-md-0">
-        <p style="color: white;">Created as a homework for the <a href="https://www.facebook.com/hlktechclub">HLK Tech Club</a>.</p>
-      </div>
-      <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase" style="color: white;">Other stuffs</h5>
-        <a
-          class="btn btn-primary btn-lg btn-floating"
-          style="background-color: #3b5998;"
-          href="https://facebook.com/RealRookie001"
-          role="button"
-        >
-          <i class="fab fa-facebook"></i>
-        </a>
-        <a
-          class="btn btn-primary btn-lg btn-floating"
-          style="background-color: #ac2bac;"
-          href="https:/instagram.com/realrookie001"
-          role="button"
-        >
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a
-          class="btn btn-primary btn-lg btn-floating"
-          style="background-color: #FF4500;"
-          href="https://reddit.com/u/Rookie_001"
-          role="button"
-        >
-          <i class="fab fa-reddit"></i>
-        </a>
-        <a
-          class="btn btn-primary btn-lg btn-floating"
-          style="background-color: #211F1F;"
-          href="https://github.com/Rookie001MC/Personal-Porfolio"
-          role="button"
-        >
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  
-</footer>
-<!--Footer-->
-
+    </footer>
+    <!--Footer-->
   </body>
 
   <!-- MDB JavaScript -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"></script>
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.2.0/mdb.min.js"
+  ></script>
   <!-- Custom scripts -->
-  <script type="text/javascript">
-  
-  </script>
+  <script type="text/javascript"></script>
 </html>
