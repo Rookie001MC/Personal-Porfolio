@@ -1,44 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,200;0,400;0,600;0,700;1,200;1,400;1,600;1,700&family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
-
+/* Set background color*/
 html{
     background-color: rgb(0, 0, 0);
 }
 
+/* Set animation for carousel and jumbotron */
+@keyframes fadeInCarousel{
+    0%{
+        filter: brightness(0%);
+    }
+    100%{
+        filter: brightness(50%);
+    }
+}
+@keyframes fadeInJumbotron{
+    0%{
+        background-color: rgba(0, 0, 0, 1);
+    }
+    100%{
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+}
+
+/* Set animation for carousel */
 .carousel-item img {
     position: relative;
-    filter:brightness(50%)
+    animation-duration: 1s;
+    animation-name: fadeInCarousel;
+    animation-fill-mode: forwards;
   }
+
+  /* Move the caption of carousel to the center left side */
 .carousel-caption{
     top:50%;
     transform: translateY(-50%);
     bottom: initial;
     font-family: 'Merriweather Sans', sans-serif;
 }
-.carousel-content {
-  position: absolute;
-  bottom: 50%;
-  left: 30%;
-  color: white;
-  text-shadow: 0 1px 2px rgba(0,0,0,.6);
-}
-
+/* Important for above */
 .item{
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
+/* Set font for navbar and jumbotron */
 .navbar{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-/*
-.navbar,
+
 #jumbotron
 {
-    -webkit-box-shadow: 5px 12px 10px 5px rgba(0,0,0,0.81); 
-    box-shadow: 5px 12px 10px 5px rgba(0,0,0,0.81);
-}
-*/
-#jumbotron
-{
+    position: relative;
     font-family: 'Merriweather Sans', sans-serif;
+    margin-top: 3rem;
+}
+.mask{
+
+    animation-duration: 1.4s;
+    animation-name: fadeInJumbotron;
+    animation-fill-mode: forwards;
 }
