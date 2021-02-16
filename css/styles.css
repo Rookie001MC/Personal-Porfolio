@@ -25,6 +25,8 @@ html{
 /* Set animation for carousel */
 .carousel-item img {
     position: relative;
+    height: auto;
+    padding-top: 58px;
     animation-duration: 1s;
     animation-name: fadeInCarousel;
     animation-fill-mode: forwards;
@@ -46,6 +48,9 @@ html{
 /* Set font for navbar and jumbotron */
 .navbar{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition-property: top;
+    transition-duration: 0.5s;
+    transition-delay: 0.05s;
 }
 
 #jumbotron
